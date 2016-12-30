@@ -13,6 +13,16 @@ import {
 } from 'react-native';
 
 export default class reactNativeSample extends Component {
+
+  componentDidMount(){
+    this.action()
+  }
+
+  async action(){
+    const aa = await Promise.resolve("async");
+    console.log(aa);
+  }
+
   render() {
     return (
       <View style={styles.container}>
